@@ -55,7 +55,8 @@
                 <input id="searchBox" class="btn" type="submit"  value="Google Search">
             </form>
             
-                <button id="btn" class="btn">I'm Feeling Lucky</button>
+            <button id="searchBox" class="btn" onclick="feelingLucky()">I'm Feeling Lucky</button>
+
             </div>
         </div>
         
@@ -66,11 +67,19 @@
  <div class="footer">
     <p>
         <a href="https://github.com/Abdu11ahMamun" style="text-decoration: none; color: #333;">
-            <i class="fab fa-github fa-2x" ></i><span> Abdu11ahMamun</span>
+            <i class="fab fa-github fa-1x" ></i><span> Abdu11ahMamun</span>
         </a>
     </p>
 </div>
 
+<script>
+    function feelingLucky() {
+      var searchQuery = document.querySelector('input[name="q"]').value;
+      if (searchQuery) {
+        window.location.href = 'https://www.google.com/search?q=' + encodeURIComponent(searchQuery) + '&btnI';
+      }
+    }
+    </script>
     
    
 </body>
