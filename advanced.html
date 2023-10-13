@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,40 +13,40 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
         .google-letters {
-          font-size: 25px;
-          display: inline-block;
-          margin-right: -3px; 
+            font-size: 25px;
+            display: inline-block;
+            margin-right: -3px;
         }
-      
-        .google-letters:first-child {
-          margin-left: -3px; 
-        }
-        /* Add your CSS code here */
-.advanced-search-btn {
-    background-color: #4d90fe;
-    color: #fff;
-    border: 1px solid #3079ed;
-    background-image: -webkit-linear-gradient(top, #4d90fe, #4787ed);
-    box-shadow: none;
-    float: left; /* Move the button to the left */
-    margin: 10px 0; /* Add some margin to separate it */
-}
 
-      </style>
+        .google-letters:first-child {
+            margin-left: -3px;
+        }
+
+        .advanced-search-btn {
+            background-color: #4d90fe;
+            color: #fff;
+            border: 1px solid #3079ed;
+            background-image: -webkit-linear-gradient(top, #4d90fe, #4787ed);
+            box-shadow: none;
+            float: left;
+            margin: 10px 0;
+        }
+    </style>
 </head>
+
 <body>
     <div class="container-fluid">
         <ul class="m-3 nav">
             <li class=" nav-item ">
-                <a class="nav-link text-dark" href="index.html">Search</a>
+                <a class="nav-link text-dark" href="index.html">Google Search</a>
 
             </li>
             <li class="mr-auto nav-item ">
                 <a class="nav-link text-dark" href="image.html">Image Search</a>
 
             </li>
-        
-        
+
+
             <li class="nav-item m-2">
                 <a href="" class="grid-icon grid-icon--fill">
                     <span class="layer layer--primary">
@@ -58,11 +59,11 @@
                         <span></span>
                     </span>
                 </a>
-            </li>    
-            <li class="nav-item">
-                <a class="btn btn-primary btn-sm nav-link "  role="button" href="https://store.google.com">Sign Up</a>
             </li>
-            
+            <li class="nav-item">
+                <a class="btn btn-primary btn-sm nav-link " role="button" href="https://store.google.com">Sign Up</a>
+            </li>
+
         </ul>
 
         <div class="container">
@@ -73,56 +74,68 @@
                 <span class="google-letters" style="color: #4285f4">g</span>
                 <span class="google-letters" style="color: #34a853">l</span>
                 <span class="google-letters" style="color: #ea4335">e</span>
-                <span style="margin-left: 4px; color: #d93025; font-size: 24px;" >Advance search</span>
+                <span style="margin-left: 4px; color: #d93025; font-size: 24px;">Advance search</span>
             </div>
             <hr>
 
 
-                <form action="https://www.google.com/search" method="GET">
-                    <div class="form-group row">
-                        <label for="query" class="col-md-3 col-form-label">All these words:</label>
-                        <div class="col-md-9">
-                            <input class="form-control" type="text" id="query" name="q">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="exact" class="col-md-3 col-form-label">Exact word or phrase:</label>
-                        <div class="col-md-9">
-                            <input class="form-control" type="text" id="exact" name="as_epq">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="any" class="col-md-3 col-form-label">Any of these words:</label>
-                        <div class="col-md-9">
-                            <input class="form-control" type="text" id="any" name="as_oq">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="none" class="col-md-3 col-form-label">None of these words:</label>
-                        <div class="col-md-9">
-                            <input class="form-control" type="text" id="none" name="as_eq">
-                        </div>
-                    </div>
-                    <button type="submit" class="advanced-search-btn btn float-right">Google Search</button>
-                </form>
+            <form action="https://www.google.com/search" method="GET">
+                <div class="form-group row">
+                    <label style="font-weight: 300;" class="col-md-3 col-form-label">Find pages with...</label>
+                    <div class="col-md-6">
+                        <label for="" class="col-md-3 col-form-label"></label>
 
-            
+                    </div>
+                    <label style="color: #6c757d;" class="col-md-3 col-form-label">To do this in the search box.</label>
 
-            
-        
-        
-   
+                </div>
+                <div class="form-group row">
+                    <label for="query" style="font-size: 14px; font-weight:300;" class="col-md-2 col-form-label">All
+                        these words:</label>
+                    <div class="col-md-6">
+                        <input class="form-control" type="text" id="query" name="q">
+                    </div>
+                    <label style="font-size: 14px; font-weight:300;" class="col-md-4 col-form-label">Type the important
+                        words: tri-colour rat terrier </label>
 
-    </div>
- <div class="footer">
-    <p>
-        <a href="https://github.com/Abdu11ahMamun" style="text-decoration: none; color: #333;">
-            <i class="fab fa-github fa-1x" ></i><span> Abdu11ahMamun</span>
-        </a>
-    </p>
-</div>
-
-    
-   
+                </div>
+                <div class="form-group row">
+                    <label for="exact" style="font-size: 14px; font-weight:300;" class="col-md-2 col-form-label">Exact
+                        word or phrase:</label>
+                    <div class="col-md-6">
+                        <input class="form-control" type="text" id="exact" name="as_epq">
+                    </div>
+                    <label style="font-size: 14px; font-weight:300;" class="col-md-4 col-form-label">Put exact words in
+                        quotes: "rat terrier"</label>
+                </div>
+                <div class="form-group row">
+                    <label for="any" style="font-size: 14px; font-weight:300;" class="col-md-2 col-form-label">Any of
+                        these words:</label>
+                    <div class="col-md-6">
+                        <input class="form-control" type="text" id="any" name="as_oq">
+                    </div>
+                    <label style="font-size: 14px; font-weight:300;" class="col-md-4 col-form-label">Type OR between all
+                        the words you want: miniature OR standard</label>
+                </div>
+                <div class="form-group row">
+                    <label for="none" style="font-size: 14px; font-weight:300;" class="col-md-2 col-form-label">None of
+                        these words:</label>
+                    <div class="col-md-6">
+                        <input class="form-control" type="text" id="none" name="as_eq">
+                    </div>
+                    <label style="font-size: 14px; font-weight:300;" class="col-md-4 col-form-label">Put a minus sign
+                        just before words that you don't want: -rodent, -"Jack Russell"</label>
+                </div>
+                <button type="submit" class="advanced-search-btn btn float-right">Google Search</button>
+            </form>
+        </div>
+        <div class="footer">
+            <p>
+                <a href="https://github.com/Abdu11ahMamun" style="text-decoration: none; color: #333;">
+                    <i class="fab fa-github fa-1x"></i><span> Abdu11ahMamun</span>
+                </a>
+            </p>
+        </div>
 </body>
+
 </html>

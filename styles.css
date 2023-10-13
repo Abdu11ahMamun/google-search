@@ -9,7 +9,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center; 
+  text-align: center;
 }
 
 .center-content img {
@@ -20,6 +20,7 @@ body {
   width: auto;
   margin-top: 8.5%;
 }
+
 #btn {
   background-color: #f8f9fa;
   border: 1px solid #f8f9fa;
@@ -36,7 +37,8 @@ body {
   cursor: pointer;
   user-select: none;
 }
-#searchBox{
+
+#searchBox {
   background-color: #f8f9fa;
   border: 1px solid #f8f9fa;
   border-radius: 4px;
@@ -52,22 +54,23 @@ body {
   cursor: pointer;
   user-select: none;
 }
+
 /* Nev icon part */
 .rounded-input-group {
   border-radius: 25px;
 }
 
 .rounded-input {
-  border-radius: 25px; 
+  border-radius: 25px;
 }
 
 
 .grid-icon {
   display: inline-block;
-  
+
 }
 
-.grid-icon > .layer {
+.grid-icon>.layer {
 
   position: absolute;
 
@@ -80,23 +83,23 @@ body {
   height: 25px;
 }
 
-.grid-icon--fill > .layer {
+.grid-icon--fill>.layer {
   width: 50%;
   height: 6px;
 }
 
 
 
-.grid-icon--fill > .layer--secondary {
+.grid-icon--fill>.layer--secondary {
   top: 50%;
   margin-top: -3px;
 }
 
-.grid-icon--fill > .layer--tertiary {
+.grid-icon--fill>.layer--tertiary {
   bottom: 0;
 }
 
-.grid-icon--fill > .layer > span {
+.grid-icon--fill>.layer>span {
   position: absolute;
   display: block;
   width: 6px;
@@ -105,12 +108,12 @@ body {
   background-color: #333;
 }
 
-.grid-icon--fill > .layer > span {
+.grid-icon--fill>.layer>span {
   left: 50%;
   margin-left: -3px;
 }
 
-.grid-icon--fill > .layer > span:before {
+.grid-icon--fill>.layer>span:before {
   display: block;
   content: "";
   width: 6px;
@@ -119,10 +122,10 @@ body {
   left: -10px;
   border-radius: 5px;
   position: absolute;
-  
+
 }
 
-.grid-icon--fill > .layer > span:after {
+.grid-icon--fill>.layer>span:after {
   display: block;
   content: "";
   width: 6px;
@@ -132,6 +135,7 @@ body {
   border-radius: 5px;
   position: absolute;
 }
+
 /* Form part */
 .box {
   color: #555;
@@ -141,20 +145,21 @@ body {
   border-radius: 5px;
   margin: 0 0 30px;
 }
-  
+
 .box.nosubmit {
   border: none;
   padding: 0;
 }
 
 input.nosubmit {
-  width: 595px; 
-  padding: 12px;
+  width: 595px;
+  padding: 12px 30px 12px 45px;
   border: 1px solid #dfe1e5;
   border-radius: 25px;
   font-size: 16px;
   background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 15px center;
 }
+
 
 /* Hover styles for the form and input */
 .box:hover {
