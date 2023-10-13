@@ -10,6 +10,28 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        .google-letters {
+          font-size: 25px;
+          display: inline-block;
+          margin-right: -3px; 
+        }
+      
+        .google-letters:first-child {
+          margin-left: -3px; 
+        }
+        /* Add your CSS code here */
+.advanced-search-btn {
+    background-color: #4d90fe;
+    color: #fff;
+    border: 1px solid #3079ed;
+    background-image: -webkit-linear-gradient(top, #4d90fe, #4787ed);
+    box-shadow: none;
+    float: left; /* Move the button to the left */
+    margin: 10px 0; /* Add some margin to separate it */
+}
+
+      </style>
 </head>
 <body>
     <div class="container-fluid">
@@ -43,7 +65,7 @@
             
         </ul>
 
-        <div class="center-content">
+        <!-- <div class="center-content">
             <img id="logo" src="googlelogo.png" alt="Google" width="272px" height="92px">
             <div class="box input-group col-md-5 mt-3 nosubmit" style="display: flex; flex-direction: column; align-items: center;">
                 <form action="https://www.google.com/search" method="GET">
@@ -57,6 +79,38 @@
             
                 <button id="btn" class="btn">I'm Feeling Lucky</button>
             </div>
+        </div> -->
+        <div class="container">
+            <div class="title">
+                <span class="google-letters" style="color: #4285f4">G</span>
+                <span class="google-letters" style="color: #ea4335">o</span>
+                <span class="google-letters" style="color: #fbbc05">o</span>
+                <span class="google-letters" style="color: #4285f4">g</span>
+                <span class="google-letters" style="color: #34a853">l</span>
+                <span class="google-letters" style="color: #ea4335">e</span>
+                <span style="margin-left: 4px; color: #d93025; font-size: 24px;" >Advance search</span>
+            </div>
+            <hr>
+            <form action="https://www.google.com/search" method="GET">
+                <div>
+                    <label for="query">All these words:</label>
+                    <input type="text" id="query" name="q">
+                </div>
+                <div>
+                    <label for="exact">Exact word or phrase:</label>
+                    <input type="text" id="exact" name="as_epq">
+                </div>
+                <div>
+                    <label for="any">Any of these words:</label>
+                    <input type="text" id="any" name="as_oq">
+                </div>
+                <div>
+                    <label for="none">None of these words:</label>
+                    <input type="text" id="none" name="as_eq">
+                </div>
+                <button class="advanced-search-btn float-right">Google Search</button>
+            </form> 
+
         </div>
         
         
